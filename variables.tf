@@ -56,8 +56,8 @@ variable "subnet_2_name" {
 variable "aws_keypair" {
     type    = map(string)
     default = {
-      "default" = "keyITMWordpress"
-      "dev"     = "keyITMWordpress"
+      "default" = "KeyAwsTest"
+      "dev"     = "KeyAwsTest"
   }
 }
 

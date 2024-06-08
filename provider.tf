@@ -5,6 +5,7 @@ terraform {
       version = "~> 5.0"
     }
   }
+  
   # State-data-file storage: type and path. S3 bucket and DynamoDB table must be exist on AWS Account
   backend "s3" {
     bucket                      = "andresrb.tfstates"
@@ -16,6 +17,7 @@ terraform {
     dynamodb_table              = "tfstate_githubrunners"
   }
 }
+
 
 # AWS Provider
 provider "aws" {
